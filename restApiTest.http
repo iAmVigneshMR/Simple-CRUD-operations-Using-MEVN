@@ -1,0 +1,36 @@
+GET http://localhost:3000/users-api/getAllUsers HTTP/1.1
+
+###
+POST http://localhost:3000/users-api/saveUsers HTTP/1.1
+content-type: application/json
+
+{
+    "name" :"Vignesh",
+    "email" :"Vignesh10s1@gmail.com",
+    "age" :"26",
+    "company" :"26",
+    "salary" :"26,000",
+    "workExperence" :"26"
+}
+
+###
+POST http://localhost:3000/users-api/editUsers HTTP/1.1
+content-type: application/json
+  
+{
+    "id":"65840ed3c156f580adc13a00",
+    "name" :"Vignesh M R",
+    "email" :"Vignesh103@gmail.com",
+    "age" :"86",
+    "company" :"comp",
+    "salary" :"28,000",
+    "workExperence" :"26"
+}
+
+### 
+POST http://localhost:3000/users-api/deleteUsers HTTP/1.1
+content-type: application/json
+
+{
+    "id":"658424033cd156b0f54f5791"
+}
